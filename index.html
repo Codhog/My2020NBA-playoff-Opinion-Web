@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <title>NBA Players Sample Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+  </head>
+<body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript" src="playerData.json"></script>
+        <script type="text/javascript" src="main.js"></script>
+
+
+
+
+
+    <div class = "container-fluid">
+            <nav class="navbar navbar-expand-md">
+                    <a class="navbar-brand" href="#"><img src="qiuXing/nbalogo.png" width="30"  class="img-fluid" /></a>
+                    <h4 class="navTitle">My NBA Stars</h4>
+                
+                    
+    </div>
+
+    <div class="container mt-5">  
+        <div class="row" id="log">
+    </div>
+    </div>
+  
+
+    <script type="text/javascript">
+        var data =  [
+            {
+                "img":"",
+                "name":"Stephen-Curry",
+                "height":"193",
+                "age":"30"
+            },
+            {
+                "img":"",
+                "name":"Allen-Iverson",
+                "height":"182",
+                "age":"56"
+            },
+        
+            {
+                "img":"",
+                "name":"Dwayne-Wade",
+                "height":"193",
+                "age":"38"
+            },
+            {
+                "img":"",
+                "name":"James-Harden",
+                "height":"200",
+                "age":"29"
+            },
+            {
+                "img":"",
+                "name":"Kevin-Garnett",
+                "height":"200",
+                "age":"45"
+            },
+            {
+                "img":"",
+                "name":"LeBron-James",
+                "height":"200",
+                "age":"35"
+            },
+            {
+                "img":"",
+                "name":"Micheal-Jordan",
+                "height":"193",
+                "age":"40"
+            },
+            {
+                "img":"",
+                "name":"Shaq-Oneal",
+                "height":"210",
+                "age":"45"
+            },
+            {
+                "img":"",
+                "name":"Tracey-McGrady",
+                "height":"210",
+                "age":"45"
+            },
+            {
+                "img":"",
+                "name":"Carmelo-Anthony",
+                "height":"210",
+                "age":"30"
+            },
+            {
+                "img":"",
+                "name":"Kobe-Bryant",
+                "height":"200",
+                "age":"40"
+            },
+            {
+                "img":"",
+                "name":"Yao-Ming",
+                "height":"235",
+                "age":"40"
+            }
+        ]
+
+        console.log(data.length)
+        for (var i=0; i<data.length;i++){
+            console.log(data[i].name);
+            console.log(data[i].age);
+            var $log = $( "#log" ),
+             str = '<div class="col-md-3 col-sm-4"><img src="qiuXing/'+data[i].name+'.jpg" class="img-fluid"/><p>'+data[i].name+'<br>'+'Height:'+ data[i].height +'<br>'+'Age:'+ data[i].age +'</p></div>',
+            html = $.parseHTML( str );
+            $log.append( html );
+            
+        }
+        
+
+    </script>
+</body>
+</html>

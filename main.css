@@ -1,0 +1,32 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+  }
+  h6 {
+    color: red;
+    text-align: center;
+  } 
+  /*--- navigation bar ---*/
+  .navbar {
+    background:#292e29;
+  }
+  .nav-link,
+  .navbar-brand {
+    color: #fff;
+    cursor: pointer;
+  }
+  .nav-link {
+    margin-right: 1em !important;
+  }
+  .nav-link:hover {
+    color: #000;
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  .navTitle{
+    color: white;
+    text-align: center;
+    margin: auto;
+  }
