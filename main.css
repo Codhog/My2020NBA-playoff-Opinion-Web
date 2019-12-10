@@ -30,3 +30,11 @@ body {
     text-align: center;
     margin: auto;
   }
+
+
+
+  .pics_in_a_row {
+    display: flex;
+    padding:5px;
+  }
+  
