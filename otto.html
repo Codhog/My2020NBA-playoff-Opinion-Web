@@ -14,10 +14,11 @@
 <body>
     <div class = "container-fluid">
         <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="#"><img src="qiuXing/1.png" width="30"  class="img-fluid" /></a>    
-            <ul style="margin-left: 200px;">
+            <a class="navbar-brand" href="index.html"><img src="qiuXing/logoOtt.png" width="200"  class="img-fluid" />    </a>
+            
+            <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="news.asp">News</a></li>
+                    <li><a href="predictions.html">Predictions</a></li>
                     <li><a href="contact.asp">Contact</a></li>
                     <li><a href="about.asp">About</a></li>
                 </ul>    
@@ -25,7 +26,8 @@
                 
     </div>
     
-    <img src="qiuXing/1.jpg" style = "margin-top: 2.8em"  class="img-fluid" />
+    
+    <div class="img1"><img src="qiuXing/1.jpg" style = "margin-top: 2.8em " width= "1280" class="img-fluid" /></div>
     <div class="square1"></div>
     <div class="square2"></div>
     <div class="text1">大道方圆</div>
@@ -38,15 +40,7 @@
   </footer>
 
 <style>
-    img {
-  height: 1000px;
-  width: 1700px;
-  position: absolute;
-  left: 0px;
-  top: -60px;
-  z-index: -3;
-  opacity: .058;
-}
+    
 footer {
     position: fixed;
     bottom: 0;
@@ -57,11 +51,20 @@ footer {
     height:15.5%;
     text-align: center;
     font: normal 18px sans-serif;
-    padding: 45px;
+    padding: 5px;
     margin-top: 80px;
 }
 p{
   color: aliceblue;
+}
+
+.img1 {
+  width: 3700px;
+  position: absolute;
+  left: 0px;
+  top: -60px;
+  z-index: -3;
+  opacity: .058;
 }
     .square1 {
       position: absolute;
@@ -73,12 +76,15 @@ p{
       opacity: .23;
       z-index: -2;
     }
+    .navbar{
+      background: transparent;
+    }
     .square2 {
         position: absolute;
       height: 650px;
       width: 700px;
       background-color: rgb(247, 58, 58);
-      margin-top:-50px;
+      margin-top:-70px;
       margin-left:200px;
       opacity: .56;
       z-index: -1;
@@ -115,11 +121,13 @@ p{
     }
 
     ul {
+      position:fixed;
+  margin-left: 200px;
   list-style-type: none;
-  margin: 0;
+  margin-top: -50px;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color:transparent;
   z-index: 1;
 }
 
@@ -140,3 +148,4 @@ li a:hover {
   background-color: rgb(195, 211, 49);
 }
     </style>
+</html>
